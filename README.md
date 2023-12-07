@@ -73,3 +73,6 @@ This project is an embedded LLM Flask-based web application containerized using 
 
 ### Conclusion and Recommendations
 The current project successfully utilizes Azure App Services for auto-scaling. To further enhance this, we recommend implementing performance monitoring tools to track the app's responsiveness and load times. This will help identify any bottlenecks and optimize resources, ensuring the app scales efficiently under varying loads.
+
+
+[Demo Video Link](https://youtu.be/YNDkSy3NCzk)
