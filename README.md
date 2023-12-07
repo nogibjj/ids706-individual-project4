@@ -51,7 +51,7 @@ docker push username/individual-project4
 Set up via Azure App Services, it's key in the configuration setting to add "WEBSITES_PORT" with a value of 5000 (more below)
 
 Log into Azure, search app services and select create (web app)
-[image](3.png)
+![image](3.png)
 
 When creating the app be sure to select Docker Container
 
@@ -59,7 +59,7 @@ When selecting the Docker container be sure to point to the correct image tab
 
 After deployment you'll need to go configuration and add "WEBSITES_PORT" with a value of 5000. 
 This will allow your app to run on at the public URL provided by Azure
-[image](4.png)
+![image](4.png)
 
 
 ### Description
