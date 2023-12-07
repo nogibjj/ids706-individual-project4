@@ -19,3 +19,53 @@ For this assignment, you will build a publicly accessible auto-scaling container
     - Quality demonstration of the project: 7 points
     - Quality of video and audio: 5 points
 - Total: 100 points
+
+[Demo Website](https://ids706-individual-project4.azurewebsites.net/)
+
+
+### Step One Environment Set Up
+Set up the environment using GitHub Code Spaces and VScode.
+
+
+### Step Two Flask App
+Build an embedded LLM flask app. 
+![image](1.png)
+
+### Step Three Build Docker File
+Be sure to expose the port 5000 Commands:
+
+docker build individual-project4 .
+docker run -p 5000:5000 individual-project4
+
+### Step Four Login to DockerHub via Codespaces
+docker login --username=XXXX in the terminal, build container and push it to DockerHub Commands:
+'''bash
+docker login --username=
+docker build -t username/individual-project4 .
+docker push username/individual-project4
+'''
+![image](2.png)
+
+
+### Step Five
+Set up via Azure App Services, it's key in the configuration setting to add "WEBSITES_PORT" with a value of 5000 (more below)
+
+Log into Azure, search app services and select create (web app)
+[image](3.png)
+
+When creating the app be sure to select Docker Container
+
+When selecting the Docker container be sure to point to the correct image tab
+
+After deployment you'll need to go configuration and add "WEBSITES_PORT" with a value of 5000. 
+This will allow your app to run on at the public URL provided by Azure
+[image](4.png)
+
+
+### Description
+This project is an embedded LLM Flask-based web application containerized using Docker. 
+
+### Dependencies
+- Python 3.x
+- Flask
+- Docker
