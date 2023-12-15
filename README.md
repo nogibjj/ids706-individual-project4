@@ -1,4 +1,4 @@
-# IDS706-individual-project4 
+# IDS706-individual-project4[![CI](https://github.com/nogibjj/IDS706-individual-project4/actions/workflows/ci.yml/badge.svg)](https://github.com/nogibjj/IDS706-individual-project4/actions/workflows/ci.yml) 
 
 ## Individual Project #4: Auto Scaling Flask App Using Any Serverless Platform
 ### Requirements
